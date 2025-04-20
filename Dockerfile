@@ -1,8 +1,5 @@
 FROM ubuntu
 
-COPY my-app /my-app/
-COPY *.txt /text-files/
-
-
+RUN apt update && apt install -y git
 
 ENTRYPOINT ["/bin/bash", "-c", "sleep 500"]
