@@ -1,4 +1,6 @@
-FROM openjdk:17-jdk
+FROM ubuntu
+
+COPY my-app /my-app/
 
 
 ENTRYPOINT ["/bin/bash", "-c", "sleep 500"]
