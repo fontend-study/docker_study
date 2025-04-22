@@ -1,5 +1,8 @@
 FROM ubuntu
 
-RUN apt update && apt install -y git
+WORKDIR /my-directory
+
+
+COPY ./ ./
 
 ENTRYPOINT ["/bin/bash", "-c", "sleep 500"]
